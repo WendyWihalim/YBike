@@ -1,0 +1,356 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1200 auto;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav li a{
+    color: white;
+    padding: 30px;
+    display: block;
+}
+
+.nav li:hover{
+    background-color: rgba(26, 7, 7, 0.1);
+}
+
+.nav{
+    position: relative;
+}
+
+.nav .content{
+    position: absolute;
+    background-color: rgba(26, 7, 7, 0.1);
+    display: none;
+}
+
+.nav .drop:hover .content{
+    display: block;
+}
+
+.content a:hover{
+    background-color: rgba(26, 7, 7, 0.1);
+}
+
+/* Home */
+.home{
+    background-color: white;
+    color: black;
+}
+
+.main-top{
+    display: flex;
+    margin: 20px auto;
+    width: 90%;
+    justify-content: space-between;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about{
+    width: 100%;
+}
+
+.about h1, h3{
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.slide{
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.image-slide{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    transition: transform 0.2s ease-out;
+}
+
+.slide-img1{
+    background-image: url(asset/gallery/2.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-img2{
+    background-image: url(asset/gallery/4.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-img3{
+    background-image: url(asset/gallery/5.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.main-bottom{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.main-bottom li{
+    margin-bottom: 10px;
+}
+
+/* Product */
+.product-list{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px;
+}
+
+.product-logo{
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.vixian img{
+    background-color: red;
+}
+
+.kawasako img{
+    background-color: white;
+}
+
+.product-logo:hover{
+    filter: brightness(80%);
+}
+
+/* Gallery */
+.gallerys{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallerys img{
+    width: 500px;
+    height: 300px;
+}
+
+/* Vixian */
+section{
+    padding: 80px;
+    padding-bottom: 0;
+}
+
+.contain-vixian{
+    display: flex;
+}
+
+.vixian-info{
+    margin-left: 30px;
+}
+
+section .contain-vixian{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+section h1{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #e84545;
+}
+
+section p{
+    font-size: 1em;
+}
+
+.contain-vixian img{
+    width: 300px;
+    height: 260px;
+}
+
+/* Kawasako */
+.contain-kawasako{
+    display: flex;
+}
+
+.kawasako-info{
+    margin-left: 30px;
+}
+
+section .contain-kawasako{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.contain-kawasako img{
+    width: 300px;
+    height: 260px;
+}
+
+/* Reserve */
+.all-product{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+}
+
+.contain-product{
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.contain-product .prod{
+    width: 100%;
+    height: 100%;
+}
+
+.contain-product img{
+    width: 100%;
+}
+
+.contain-product h1{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #e84545;
+}
+
+.product-reserve{
+    margin: auto;
+    width: 90%;
+    padding: 20px 0;
+}
+
+/* Purchase */
+form{
+    border: 1px solid black;
+    width: 40%;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.input-div, .input-div2{
+    display: flex;
+    margin: 15px 0;
+}
+
+.inputs{
+    width: 100%;
+}
+
+.redc{
+    background-color: red;
+    color: red;
+}
+
+.bluec{
+    background-color: blue;
+    color: blue;
+}
+
+.blackc{
+    background-color: black;
+    color: black;
+}
+
+.label{
+    width: 20%;
+}
+
+.label-s{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+textarea{
+    resize: none;
+}
+
+#form button{
+    background-color: green;
+    color: white;
+}
+
+#error{
+    color: red;
+    padding-top: 10px;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+span{
+    color: turquoises;
+}
+
+.img-f{
+    width: 200px;
+    justify-content: space-around;
+}
+
+.img-f img{
+    width: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    .input-div{
+        display: block;
+        margin: 15px 0;
+    }
+    .img-f{
+        width: 50px;
+        display: block;
+    }
+    .product-list{
+        display: block;
+    }
+    .main-top{
+        display: block;
+    }
+  }
+  
